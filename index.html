@@ -7,6 +7,10 @@
 </head>
 <body>
 
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+  
 <!-- Logo über dem Banner -->
 <div class="logo-banner">
   <a href="https://katalog.hopeliferp.net/startseite" target="_blank">
@@ -155,6 +159,19 @@
 
 <!-- Credit unten rechts -->
 <div class="credit-tag">made by JamesMS</div>
+
+
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 0.5s ease";
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 500);
+  });
+</script>
+
 
 </body>
 </html>
